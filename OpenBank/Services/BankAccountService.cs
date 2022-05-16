@@ -22,6 +22,7 @@ namespace OpenBank.Services
                 {
                     return Result.Failure("Customer Not Found");
                 }
+
                 _context.BankAccounts.Add(new BankAccount
                 {
                     CustomerId = request.CustomerId,
